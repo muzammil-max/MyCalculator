@@ -15,7 +15,7 @@ let msg =
 
 chalkAnimation.radar(msg);
 setTimeout(() => {
-  console.log(chalk.bgYellow("Enter your first number and then second number"));
+  console.log(chalk.italic("Enter your first number and then second number"));
 }, 9000);
 
 const answer = await inquirer.prompt([
