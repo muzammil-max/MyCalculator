@@ -10,7 +10,7 @@ console.log("\u0007");
 let msg = "--------------------------------------------Welcome to Muzammil's Calculator----------------------------------------------";
 chalkAnimation.radar(msg);
 setTimeout(() => {
-    console.log(chalk.bgYellow("Enter your first number and then second number"));
+    console.log(chalk.italic("Enter your first number and then second number"));
 }, 9000);
 const answer = await inquirer.prompt([
     //here await means to tell the typescript to wait until the user gives input.
