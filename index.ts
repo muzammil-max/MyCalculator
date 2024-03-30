@@ -15,7 +15,9 @@ let msg =
 
 chalkAnimation.radar(msg);
 setTimeout(() => {
-  console.log(chalk.italic("Enter your first number and then second number"));
+  console.log(
+    chalk.bgBlueBright("Enter your first number and then second number")
+  );
 }, 9000);
 
 const answer = await inquirer.prompt([
@@ -23,9 +25,7 @@ const answer = await inquirer.prompt([
   { message: "First Number", type: "number", name: "firstNumber" }, //in simplle words it means the input value.
   { message: "Second Number", type: "number", name: "secondNumber" },
   {
-    message: chalk.bgGreen(
-      "Select one the operators to perform the operation"
-    ),
+    message: chalk.bgGreen("Select one the operators to perform the operation"),
     type: "list",
     name: "operator",
     choices: [
